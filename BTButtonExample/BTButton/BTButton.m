@@ -1,9 +1,9 @@
 //
 //  BTButton.m
-//  PlanetTV
+//  BTButton
 //
-//  Created by Borut Tomažin on 6/5/13.
-//  Copyright (c) 2013 TSmedia, medijske vsebine in storitve, d.o.o. All rights reserved.
+//  Created by Borut Tomažin on 6/11/13.
+//  Copyright (c) 2013 Borut Tomazin. All rights reserved.
 //
 
 #import "BTButton.h"
@@ -17,6 +17,7 @@
 #endif
 
 #define kButtonOffset 35.f
+#define kTopPadding 10.f
 
 @interface BTButton()
 
@@ -81,19 +82,27 @@
     CGContextFillRect(context, buttonRect);
     
     // Draw button image
-    CGImageRef buttonCGImage = buttonImage.CGImage;
-    CGSize imageSize = CGSizeMake(CGImageGetWidth(buttonCGImage)/[self scale], CGImageGetHeight(buttonCGImage)/[self scale]);
-    [buttonImage drawInRect:CGRectMake(rect.size.width/2. - imageSize.width/2.f,
-                                       (rect.size.height-kButtonOffset)/2.f - imageSize.height/2.f + 10.f,
-                                       imageSize.width,
-                                       imageSize.height)];
+    if (buttonImage != nil) {
+        CGImageRef buttonCGImage = buttonImage.CGImage;
+        CGSize imageSize = CGSizeMake(CGImageGetWidth(buttonCGImage)/[self scale], CGImageGetHeight(buttonCGImage)/[self scale]);
+        CGFloat buttonYOffset = (rect.size.height-kButtonOffset)/2.f - imageSize.height/2.f + kTopPadding;
+        if (self.titleLabel.text.length == 0) {
+            buttonYOffset = rect.size.height/2.f - imageSize.height/2.f;
+        }
+        [buttonImage drawInRect:CGRectMake(rect.size.width/2. - imageSize.width/2.f,
+                                           buttonYOffset,
+                                           imageSize.width,
+                                           imageSize.height)];
+    }
     
     // Draw button title
-    CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
-    [self.titleLabel.text drawInRect:CGRectMake(0.f, rect.size.height-kButtonOffset, rect.size.width, 20.f)
-                            withFont:self.titleLabel.font
-                       lineBreakMode:self.titleLabel.lineBreakMode
-                           alignment:UITextAlignmentCenter];
+    if (self.titleLabel.text.length > 0) {
+        CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
+        [self.titleLabel.text drawInRect:CGRectMake(0.f, (buttonImage != nil ? rect.size.height-kButtonOffset : rect.size.height/2 - 10.f), rect.size.width, 20.f)
+                                withFont:self.titleLabel.font
+                           lineBreakMode:self.titleLabel.lineBreakMode
+                               alignment:UITextAlignmentCenter];
+    }
     
     [self.titleLabel removeFromSuperview];
 }

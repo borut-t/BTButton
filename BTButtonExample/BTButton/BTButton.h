@@ -1,9 +1,9 @@
 //
 //  BTButton.h
-//  PlanetTV
+//  BTButton
 //
-//  Created by Borut Tomažin on 6/5/13.
-//  Copyright (c) 2013 TSmedia, medijske vsebine in storitve, d.o.o. All rights reserved.
+//  Created by Borut Tomažin on 6/11/13.
+//  Copyright (c) 2013 Borut Tomazin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
