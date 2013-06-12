@@ -6,6 +6,7 @@
 //  Created by Borut Tomažin on 6/11/13.
 //  Copyright (c) 2013 Borut Tomazin. All rights reserved.
 //
+//  Distributed under the MIT License (MIT)
 //  Get the latest version from here:
 //  https://github.com/borut-t/BTButton
 //
