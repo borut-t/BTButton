@@ -18,12 +18,12 @@
 		BF5D6794176747FC00DEB7F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5D6793176747FC00DEB7F4 /* Default-568h@2x.png */; };
 		BF5D6797176747FC00DEB7F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5D6796176747FC00DEB7F4 /* ViewController.m */; };
 		BF5D679A176747FC00DEB7F4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5D6798176747FC00DEB7F4 /* ViewController.xib */; };
-		BF5D67A317674B0D00DEB7F4 /* BTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5D67A217674B0D00DEB7F4 /* BTButton.m */; };
 		BF5D67A617674C1A00DEB7F4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5D67A417674C1A00DEB7F4 /* logo.png */; };
 		BF5D67A717674C1A00DEB7F4 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5D67A517674C1A00DEB7F4 /* logo@2x.png */; };
 		BF5D67AA17674EEE00DEB7F4 /* logo_hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5D67A817674EEE00DEB7F4 /* logo_hover@2x.png */; };
 		BF5D67AB17674EEE00DEB7F4 /* logo_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5D67A917674EEE00DEB7F4 /* logo_hover.png */; };
 		BF5D67AE17675A2900DEB7F4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5D67AD17675A2900DEB7F4 /* bg.png */; };
+		BFA616B017D06AEF004EF888 /* BTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA616AF17D06AEF004EF888 /* BTButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,13 +43,13 @@
 		BF5D6795176747FC00DEB7F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BF5D6796176747FC00DEB7F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BF5D6799176747FC00DEB7F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		BF5D67A117674B0D00DEB7F4 /* BTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTButton.h; sourceTree = "<group>"; };
-		BF5D67A217674B0D00DEB7F4 /* BTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTButton.m; sourceTree = "<group>"; };
 		BF5D67A417674C1A00DEB7F4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		BF5D67A517674C1A00DEB7F4 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		BF5D67A817674EEE00DEB7F4 /* logo_hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_hover@2x.png"; sourceTree = "<group>"; };
 		BF5D67A917674EEE00DEB7F4 /* logo_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_hover.png; sourceTree = "<group>"; };
 		BF5D67AD17675A2900DEB7F4 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		BFA616AE17D06AEF004EF888 /* BTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTButton.h; sourceTree = "<group>"; };
+		BFA616AF17D06AEF004EF888 /* BTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 		BF5D6783176747FC00DEB7F4 /* BTButtonExample */ = {
 			isa = PBXGroup;
 			children = (
-				BF5D67A017674B0D00DEB7F4 /* BTButton */,
+				BFA616AD17D06AEF004EF888 /* BTButton */,
 				BF5D678C176747FC00DEB7F4 /* AppDelegate.h */,
 				BF5D678D176747FC00DEB7F4 /* AppDelegate.m */,
 				BF5D6795176747FC00DEB7F4 /* ViewController.h */,
@@ -122,15 +122,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BF5D67A017674B0D00DEB7F4 /* BTButton */ = {
-			isa = PBXGroup;
-			children = (
-				BF5D67A117674B0D00DEB7F4 /* BTButton.h */,
-				BF5D67A217674B0D00DEB7F4 /* BTButton.m */,
-			);
-			path = BTButton;
-			sourceTree = "<group>";
-		};
 		BF5D67AC1767589A00DEB7F4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +132,16 @@
 				BF5D67AD17675A2900DEB7F4 /* bg.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		BFA616AD17D06AEF004EF888 /* BTButton */ = {
+			isa = PBXGroup;
+			children = (
+				BFA616AE17D06AEF004EF888 /* BTButton.h */,
+				BFA616AF17D06AEF004EF888 /* BTButton.m */,
+			);
+			name = BTButton;
+			path = ../../BTButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +218,7 @@
 				BF5D678A176747FC00DEB7F4 /* main.m in Sources */,
 				BF5D678E176747FC00DEB7F4 /* AppDelegate.m in Sources */,
 				BF5D6797176747FC00DEB7F4 /* ViewController.m in Sources */,
-				BF5D67A317674B0D00DEB7F4 /* BTButton.m in Sources */,
+				BFA616B017D06AEF004EF888 /* BTButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
