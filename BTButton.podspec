@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "://github.com/borut-t/BTButton"
   s.screenshots  = "https://raw.github.com/borut-t/BTButton/master/Screenshots/preview.png"
   s.license      = { :type => 'zlib', :file => 'LICENCE.md' }
-  s.author       = { "Borut Tomažin" => "borut.tomazin@gmail.com" }
+  s.author       = { "Borut Tomažin" => "borut.tomazin@icloud.com" }
   s.platform     = :ios, '5.0'
   s.source       = { :git => "https://github.com/borut-t/BTButton.git", :tag => "1.0.0" }
   s.source_files = 'BTButton'
